@@ -20,7 +20,7 @@ const fadeInAnimation = {
 }
 
 export const Skills = () => {
-    const { ref } = useTabInView('Skills')
+    const  ref  = useTabInView('Skills')
   return (
     <section ref={ref} id='skills' className=' max-w-[53rem] scroll-mt-28 text-center mt-28 sm:mt-0'>
         <SectionHeading>My Skills</SectionHeading>

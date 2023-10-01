@@ -8,7 +8,7 @@ import { HiDownload } from "react-icons/hi"
 import { useTabInView } from '@/lib/hooks'
 
 export const Intro = () => {
-  const { ref } = useTabInView('Home', 0.5)
+  const  ref  = useTabInView('Home', 0.5)
 
     const profilePicSrc = profilePic.src
 

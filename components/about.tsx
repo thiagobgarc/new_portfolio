@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { useTabInView } from '@/lib/hooks'
 
 export const About = () => {
-  const { ref } = useTabInView('About', 0.5)
+  const  ref  = useTabInView('About', 0.5)
 
   
   return (

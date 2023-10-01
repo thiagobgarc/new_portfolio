@@ -6,7 +6,7 @@ import { Project } from './project_data'
 import { useTabInView } from '@/lib/hooks'
 
 export const Projects = () => {
-  const { ref } = useTabInView('Projects')
+  const  ref  = useTabInView('Projects')
 
   return (
     <section ref={ref} id='projects' className='scroll-mt-28'>
