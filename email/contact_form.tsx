@@ -16,7 +16,7 @@ import { Tailwind } from "@react-email/tailwind";
 type ContactFormEmailProps = {
   message: string;
   senderEmail: string;
-};
+}
 
 export default function ContactFormEmail({
   message,
