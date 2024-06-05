@@ -9,6 +9,9 @@ const nextConfig = {
             // !! WARN !!
             ignoreBuildErrors: true,
           },
+          experimental: {
+            serverActions: true,
+          },
 }
 
 module.exports = nextConfig
