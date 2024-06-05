@@ -6,8 +6,6 @@ import { getErrorMessage, validateString } from "@/lib/utils"
 
 const resend = new Resend(process.env.RESEND_API_KEY2)
 
-
-
 export const sendEmail = async (formData: FormData) => {
   console.log("Running sendEmailHandler")
   console.log(formData.get("senderEmail"))
@@ -23,7 +21,7 @@ export const sendEmail = async (formData: FormData) => {
   }
 
   try{
-    await resend.emails.send({
+    resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: "thiagobuenogarcia1@gmail.com",
       subject: `New message from ${senderEmail}`,
