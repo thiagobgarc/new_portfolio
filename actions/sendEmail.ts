@@ -3,7 +3,7 @@ import { Resend } from "resend"
 import { getErrorMessage, validateString } from "@/lib/utils"
 import React from "react"
 
-const resend = new Resend(process.env.RESEND_API_KEY2)
+const resend = new Resend(process.env.RESEND_API_KEY2);
 
 export const sendEmail = async (formData: FormData) => {
   console.log("Running sendEmailHandler")
@@ -19,8 +19,8 @@ export const sendEmail = async (formData: FormData) => {
     }
   }
 
-  try{
-   await resend.emails.send({
+  try {
+    await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: "thiagobuenogarcia1@gmail.com",
       subject: `New message from ${senderEmail}`,
