@@ -17,9 +17,9 @@ export const Contact = () => {
       transition={{ duration: 1 }} viewport={{ once: true }}
     >
         <SectionHeading>Contact Me</SectionHeading>
-        <p className='text-gray-700 text-center -mt-5'>Feel free to contact me at <a className='underline' href='mailto:thiagobuenogarcia1@gmail.com'>thiagobuenogarcia1@gmail.com</a>{' '} or through this form
+        <p className='text-gray-700 text-center -mt-5'>Feel free to contact me at <a className='underline' href='mailto:thiagobuenogarcia1@gmail.com'>thiagobuenogarcia1@gmail.com</a>{' '}
         </p>
-        <form className='mt-10 flex flex-col' 
+        {/* <form className='mt-10 flex flex-col' 
         action={async (formData) => {
           await sendEmail(formData)
         }}>
@@ -36,7 +36,7 @@ export const Contact = () => {
             maxLength={5000}
             />
             <SubmitBtn />
-        </form>
+        </form> */}
     </motion.section>
   )
 }
